@@ -1,0 +1,30 @@
+body{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    ;
+}
+#green{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+}
+#yellow{
+grid-column: 1;
+grid-row-start: 2;
+grid-row-end: 4;
+
+}
+#orange{
+    grid-column:2;
+    grid-row:2;
+}
+#blue{
+    grid-column:2;
+    grid-row:3;
+}
+#red{
+    grid-column:3;
+    grid-row-start: 2;
+    grid-row-end:4;
+}
