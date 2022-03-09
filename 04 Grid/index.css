@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calculator{
+    font-size: 4rem;
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-areas: 
+    "result result result result"
+    "operator operator operator operator"
+    "num num num equal"
+    "num num num equal"
+    "num num num equal"
+    "last-row last-row last-row equal";
+    align-items: center;
+    justify-items: center;
+}
+
+.result{
+    grid-row: 1;
+    grid-column: 1/span 4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    background-color: #424c52;
+    border:1 px solid black;
+    padding-right: 20px;
+}
+
+.operator{
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d2dce3;
+    border: 1px solid black;
+}
+.num-1{
+    grid-row: 3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+}
+.num-2{
+    grid-row: 4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+}
+.num-3{
+    grid-row: 5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+}
+.last-row{
+    grid-row: 6;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+}
+.equal {
+    grid-column:4;
+    grid-row: 3/span4;
+    background-color:#f77077;
+    color: black;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
